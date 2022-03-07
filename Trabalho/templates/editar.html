@@ -1,0 +1,9 @@
+<form action="{{ url_for("editar") }}" method="post">
+<input type="hidden" id="idcodigo" name="idcodigo" value="{{ pintura.idcodigo }}">
+<label for="nomedaobra">Nome da obra:</label>
+<input type="text" id="nomedaobra" name="nomedaobra" placeholder="Digite o Nome da pintura" value="{{ pintura.nomedaobra }}">
+<label for="preco">Preço:</label>
+<input type="text" id="preco" name="preco" placeholder="Digite o preço da pintura" value="{{ pintura.preco }}">
+<label for="Artista">Artista:</label>
+<input type="text" id="artista" name="artista" placeholder="Digite o artista que fez a obra" value="{{ pintura.artista }}">
+<button type="submit">Enviar</button>

@@ -1,0 +1,22 @@
+<p>Bem vindo ao trabalho</p>
+
+<table>
+    <tr>
+        <th>IdCodigo</th>
+        <th>Nome da Obra</th>
+        <th>Preco</th>
+        <th>Artista</th>
+    </tr>
+    {% for pintura in lista %}
+        <tr>
+            <td>{{ pintura.idcodigo }}</td>
+            <td>{{ pintura.nomedaobra }}</td>
+            <td>{{ pintura.preco }}</td>
+            <td>{{ pintura.artista }}</td>
+            <td><a href="/pintura/{{ pintura.idcodigo }}">Alterar</a></td>
+            <td><a href="/pintura/remover/{{ pintura.idcodigo }}">Excluir</a></td>            
+        </tr>
+    {% endfor %}
+</table>
+
+<a href="/pintura/criar">Inserir</a>

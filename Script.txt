@@ -1,0 +1,7 @@
+create table pinturas
+(
+	idcodigo int primary key,
+	nomedaobra text,
+	preco text,
+	artista int
+);
